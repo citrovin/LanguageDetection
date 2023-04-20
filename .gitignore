@@ -1,0 +1,10 @@
+# GIT IGNORE FILE
+
+# ignore the data set from the Lab5 directory
+./src/Lab5/datasets/*
+
+# ignore all ipynb_checkpoints
+./src/Lab5/.ipynb_checkpoints/*
+
+./src/Lab5/gsc_output_fixed/*
+
