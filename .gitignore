@@ -10,7 +10,3 @@ src/Lab5/gsc_output_fixed/
 
 # ignore Lab5
 src/Lab5/
-
-
-# ignore the data
-data/
