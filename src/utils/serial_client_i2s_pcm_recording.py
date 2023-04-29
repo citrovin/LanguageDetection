@@ -59,7 +59,8 @@ def get_path(data_path: str='./data/'):
 	   + '2. English\n'  
        + '3. French\n'
        + '4. Italian\n'
-       + '5. Test (e.g. tuning gain of mic)\n'
+       + '5. Spanish\n'
+       + '6. Test (e.g. tuning gain of mic)\n'
        
 	   )
 	)
@@ -69,12 +70,14 @@ def get_path(data_path: str='./data/'):
 	if(choice==1):
 		file_path += 'german/'
 	elif(choice==2):
-		file_path += 'engilsh/'
+		file_path += 'english/'
 	elif(choice==3):
 		file_path += 'french/'
 	elif(choice==4):
 		file_path += 'italian/'
 	elif(choice==5):
+		file_path += 'spanish/'
+	elif(choice==6):
 		file_path += 'test/'
 	else:
 		print('LanguageError: language does not exist in the data directory.')
