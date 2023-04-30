@@ -1,0 +1,2 @@
+model_checkpoint_path: "checkpoints-language-detection-5-languages.ckpt"
+all_model_checkpoint_paths: "checkpoints-language-detection-5-languages.ckpt"
