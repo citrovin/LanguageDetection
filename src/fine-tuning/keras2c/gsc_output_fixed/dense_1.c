@@ -12,7 +12,7 @@
 #endif
 
 #define INPUT_SAMPLES 32
-#define FC_UNITS 5
+#define FC_UNITS 4
 #define ACTIVATION_LINEAR
 
 typedef number_t dense_1_output_type[FC_UNITS];
