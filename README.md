@@ -28,15 +28,19 @@ The languages that we aim to classify are:
 
 ### Pre-Training
 We pre-train our model on the FLEURS dataset. We drop every language that we do not intend to classify. The data is processed where each sample consists of 1 second of data with a sampling rate of 16.000 Hz. Thus, one minute speech data would be transformed into 60 samples, containing 16.000 values each. The distribution of pur data w.r.t. the different languages are as follows:
+
 ![Distribtion of the pre-training data](./images/data-distribution-pre-training.png)
 
 We trained for 50 epochs, however the early callback, which stops training after lack of improvement, halted the training after 38 epochs (x-axis). In the left image we see the accuracy plotted over time, here we see the common behaviour in machine learning. At some point (around 25 epochs in our case) the validation line stagnates and the training line keeps increasing. From this moment onwards we stop the training and capture the weights as our final model. The following two images show the training loss and accuracy.
+
 ![Loss of pre-training](./images/loss_pre-training.png)
 ![Accuracy during pre-training](./images/accuracy_pre-training.png)
+
 Finally, when feeding the self-collected data to this model, it achieves an accuracy of 20% which is equal to complete randomness.
 
 ### Fine-Tuning
 The data that will be used for fine-tuning has been collected by ourselves, using the board and attached microphone. Here, as mentioned before, we selected the 5 languages for which we could collect at least one female and male voice. In total we collected 10 minutes of data. Roughly 1 minute per person and one male and female person per language. The self-collected data consists of recordings of very language, where half is spoken by a female subject and half by a male subject. After permutation, the splitted training, validation and testing sets are described as follows:
+
 ![Distribution of the fine-tuning data](./images/distribution-fine-tuning.png)
 
 Some imbalance can be seen in the data, due to the random permutations and due to the imbalance in sample length. However, this should not greatly impact the performance, because none of the samples is heavily over or under-represented.
