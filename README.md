@@ -33,8 +33,10 @@ We pre-train our model on the FLEURS dataset. We drop every language that we do 
 
 We trained for 50 epochs, however the early callback, which stops training after lack of improvement, halted the training after 38 epochs (x-axis). In the left image we see the accuracy plotted over time, here we see the common behaviour in machine learning. At some point (around 25 epochs in our case) the validation line stagnates and the training line keeps increasing. From this moment onwards we stop the training and capture the weights as our final model. The following two images show the training loss and accuracy.
 
-![Loss of pre-training](./images/loss_pre-training.png)
-![Accuracy during pre-training](./images/accuracy_pre-training.png)
+<p float="center">
+<img src="./images/accuracy_pre-training.png" width="200" />
+  <img src="./images/loss_pre-training.png" width="200" /> 
+</p>
 
 Finally, when feeding the self-collected data to this model, it achieves an accuracy of 20% which is equal to complete randomness.
 
