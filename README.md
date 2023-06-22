@@ -56,7 +56,7 @@ Some imbalance can be seen in the data, due to the random permutations and due t
 
 <p align="center">
     <img src="./images/accuracy-fine-tuning.png" width="350"/>
-    <img src="./images/loss-fine_tuning.png" width="350"/>
+    <img src="./images/loss-fine-tuning.png" width="350"/>
 </p>
 
 
