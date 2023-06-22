@@ -1,6 +1,6 @@
 # Language Detection on the Edge
 
-## Introduction
+## Project Description
 
 AI on the edge, which refers to running artificial intelligence algorithms directly on devices such as smartphones, cameras, and sensors, has become increasingly significant in recent years. This approach to AI processing can improve efficiency, reduce latency, and enhance privacy by processing data locally rather than sending it to a remote server. One important application of AI is the ability to identify spoken languages. This technology can benefit various industries such as customer service, law enforcement, and healthcare by providing real-time language translation services, improving communication, and reducing errors. Overall, AI on the edge and language identification have the potential to improve productivity, enhance user experience, and facilitate global communication. By combining these two fields of research, we found that new question arise, such as:
 - How can we design a neural network, that classifies languages for use on the edge?
@@ -52,6 +52,12 @@ The data that will be used for fine-tuning has been collected by ourselves, usin
 
 Some imbalance can be seen in the data, due to the random permutations and due to the imbalance in sample length. However, this should not greatly impact the performance, because none of the samples is heavily over or under-represented.
 
+
+
+<p align="center">
+    <img src="./images/accuracy-fine-tuning.png" width="350"/>
+    <img src="./images/loss-fine_tuning.png" width="350"/>
+</p>
 
 
 ### Comparison of pre-trained model and fine-tuned model
