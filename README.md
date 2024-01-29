@@ -64,3 +64,15 @@ Some imbalance can be seen in the data, due to the random permutations and due t
 Finally, when feeding the self-collected data to this model, it achieves an accuracy of 20% which is equal to complete randomness.
 
 ## Deployment on the Edge
+We use the MicroAI framework to convert our trained neural network into C code, in order to deploy it. The model is called inside a loop, where the measurements of the microphone are passed to the model as an input. The model then predicts one of the languages and prints to the console which language is currently being spoken.
+
+## Authors
+Dalim Wahby
+- Github: citrovin (https://github.com/citrovin)
+- LinkedIn: https://www.linkedin.com/in/dalim-wahby/
+
+Niels van der Heijden
+- Github: NvdHeijden (https://github.com/NvdHeijden)
+- LinkedIn: https://www.linkedin.com/in/niels-van-der-heijden-7506561a7/
+
+Niels van der Heijden
